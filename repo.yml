@@ -2,21 +2,21 @@ version : '3'
 
 services :
   server1 :
-    image : /ajinkya48765/webnet:01
+    image : /komalsupekar/student:01
     ports :
       - 7080:80
     volumes :
-      - webset:/var/www/html
+      - web:/var/www/html
     restart : always
 
   server2 :
-    image : /ajinkya48765/webnet:01
+    image : /komalsupekar/student:01
     ports :
       - 7081:81
     volumes :
-      - webset:/var/www/html
+      - web:/var/www/html
     restart : always
 
 
 volumes :
-  webset:
+  web:
